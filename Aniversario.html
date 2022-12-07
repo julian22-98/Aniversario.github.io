@@ -1,0 +1,112 @@
+
+<html>
+    <head>
+    <title>FELICES DOS AÑOS AMOR MIO</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    body,h1 {font-family: "Montserrat", sans-serif}
+    img {margin-bottom: -7px}
+    .w3-row-padding img {margin-bottom: 12px}
+    </style>
+    </head>
+    <body>
+    
+    <!-- Sidebar -->
+    <nav class="w3-sidebar w3-black w3-animate-top w3-xxlarge" style="display:none;padding-top:150px" id="mySidebar">
+      <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-black w3-xxlarge w3-padding w3-display-topright" style="padding:6px 24px">
+        <i class="fa fa-remove"></i>
+      </a>
+      <div class="w3-bar-block w3-center">
+        <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Photos</a>
+      </div>
+    </nav>
+    
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-content" style="max-width:1500px">
+    
+    <!-- Header -->
+    <div class="w3-opacity">
+    <span class="w3-button w3-xxlarge w3-white w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></span> 
+    <div class="w3-clear"></div>
+    <header class="w3-center w3-margin-bottom">
+      <h1><b>PHOTOLIO</b></h1>
+      <p><b>A page made by your boyfriend</b></p>
+      <p class="w3-padding-16"><button class="w3-button w3-black" onclick="myFunction()">Toggle Grid Padding</button></p>
+    </header>
+    </div>
+    
+    <!-- Photo Grid -->
+    <div class="w3-row" id="myGrid" style="margin-bottom:128px">
+      <div class="w3-third">
+        <img src="/Fotos/IMG_0906.jpg" style="width: 100%">
+        <img src="/Fotos/IMG-20210708-WA0017.jpg" style="width:100%">
+        <img src="/Fotos/IMG_0844.JPG" style="width:100%">
+        <img src="/Fotos/e9a41411-c140-487c-bd82-a55d8e91f681.jpg" style="width:100%">
+        <img src="/Fotos/3a53ca13-94f7-4bf1-84e0-9ea50bad9790.jpg" style="width:100%">
+        <img src="/Fotos/Captura de pantalla 2022-12-06 083550.jpg" style="width:100%">
+        <img src="/Fotos/862ccc25-bc75-47fa-bff1-d50cdefe0a0d.jpg" style="width: 100%;">
+      </div>
+    
+      <div class="w3-third">
+        <img src="/Fotos/IMG-20210613-WA0026.jpg" style="width:100%">
+        <img src="/Fotos/IMG-20210713-WA0010.jpg" style="width:100%">
+        <img src="/Fotos/ce9cd75a-4e94-453a-837b-4a952e9b6c96.jpg" style="width:100%">
+        <img src="/Fotos/d0015e19-8080-4ecb-b64e-fa568319531c.jpg" style="width:100%">
+        <img src="/Fotos/b562536e-04b1-4cdc-a917-594de17ad91a.jpg" style="width:100%">
+        <img src="/Fotos/1f2a5de1-113d-4317-8dca-24fd34a626ab.jpg" style="width:100%">
+        <img src="/Fotos/IMG-20210708-WA0020.jpg" style="width: 100%;">
+      </div>
+    
+      <div class="w3-third">
+        <img src="/Fotos/29a92d44-b830-4dd1-9a7b-41cd00a242a4.jpg" style="width:100%">
+        <img src="/Fotos/18b15933-2512-4e72-a7fd-9752a505ff4a.jpg" style="width:100%">
+        <img src="/Fotos/3fb3a925-891d-44d1-b303-b320801ef71e.jpg" style="width:100%">
+        <img src="/Fotos/7f9879ad-4bb3-4f68-aac9-573effd2e0dd.jpg" style="width:100%">
+        <img src="/Fotos/aeca694e-08fe-4a28-a8f0-8b19adc6938b.jpg" style="width:100%">
+        <img src="/Fotos/3fb3a925-891d-44d1-b303-b320801ef71e.jpg" style="width: 100%;">
+      </div>
+    </div>
+    
+    <!-- End Page Content -->
+    </div>
+    
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin-top:128px"> 
+      <i class="fa fa-facebook-official w3-hover-opacity"></i>
+      <i class="fa fa-instagram w3-hover-opacity"></i>
+      <i class="fa fa-snapchat w3-hover-opacity"></i>
+      <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+      <i class="fa fa-twitter w3-hover-opacity"></i>
+      <i class="fa fa-linkedin w3-hover-opacity"></i>
+      <p class="w3-medium">Powered by TU NOVIO</p>
+    </footer>
+     
+    <script>
+    // Toggle grid padding
+    function myFunction() {
+      var x = document.getElementById("myGrid");
+      if (x.className === "w3-row") {
+        x.className = "w3-row-padding";
+      } else { 
+        x.className = x.className.replace("w3-row-padding", "w3-row");
+      }
+    }
+    
+    // Open and close sidebar
+    function w3_open() {
+      document.getElementById("mySidebar").style.width = "100%";
+      document.getElementById("mySidebar").style.display = "block";
+    }
+    
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+    }
+    </script>
+    
+    </body>
+    </html>
+    
